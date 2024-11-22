@@ -13,5 +13,5 @@
 class Post < ApplicationRecord
   belongs_to :board
 
-  validates :title, :body, :expires_on, presence: true
+  validates :title, :body, :expires_on, :board_id, presence: true
 end
